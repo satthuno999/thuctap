@@ -1,0 +1,575 @@
+body{
+    font-size: 14px;
+}
+.banner img{
+    width: 100%;
+}
+#top li span{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+}
+#top {
+    height: 46px;
+    color: #f2f2f2;
+    font-size: 11px;
+    padding-top: 10px ;
+}
+#top ul {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+li{
+    display: list-item;
+    list-style: none;
+}
+#top a{
+    text-decoration: none;
+    color: #555;
+    text-transform: uppercase;
+}
+.fas{
+    color: red;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.icons_2019 {
+    display: inline-block;
+    background: url(../images/sprite_2019.png?v=2.2) no-repeat;
+    vertical-align: middle;
+}
+.icons_2019.icon_hangchinhhang {
+    width: 30px;
+    height: 30px;
+    background-position: -8px -53px;
+}
+.header {
+    height: 90px;
+    position: relative;
+    background: #ce0707;
+    
+}
+.fomat{
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+#logo{
+    float: left;
+    text-decoration: none;
+    margin-top: 9px;
+    color: #333;
+}
+#logo img{
+    border: none;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+#search {
+    width: 530px;
+    height: 42px;
+    background: #fff;
+
+}
+form {
+    float: left;
+    width: 530px;
+    height: 42px;
+    margin-top: 24px;
+    margin-left: 30px;
+    background: #fff;
+    vertical-align: middle;
+}
+form select{
+    margin: 2px;
+    outline: none;
+    border: none;
+    float: left;
+    height: 39px;
+    width: 150px;
+    margin-left: 8px;
+}
+form input{
+    width: 300px;
+    height: 41px;
+    border: none;
+    margin-right: 10px;
+    background: none;
+    float: left;
+    outline: none;
+    margin-left: 10px;
+}
+.but-search{    
+    float: left;
+    width: 50px;
+    height: 42px;
+    border: none;
+    background: none;
+}
+#header-right {
+    float: right;
+    margin-top: 13px;
+}
+#header-right a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    float: left;
+    margin-left: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+#header-right a span{
+    display: block;
+    font-size: 14px;
+}
+#header-right a img{
+    margin-bottom: 5px;
+}
+#tintuc a img{
+    margin-bottom: 5px;    
+}
+.col{
+    float: left;
+    padding-right: 10px;
+    padding-left: 0;
+}
+.red {
+    color: red;
+}
+.col{
+    width: 250px;
+    padding-top: 20px;
+}
+.col a{
+    display: block;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: #333;
+}
+.col h3{
+    font-size: 1.17em;
+    margin-bottom: 20px;
+}
+.col a:hover{
+    color: #ce0707;
+}
+#footer{
+    display: block;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+#footer a{
+    text-decoration: none;
+}
+#footer a i{
+    color: #485894;
+    font-size: 30px;
+    vertical-align: middle;
+}
+#introduce{
+    display: block;
+    background: #f0eded;
+    overflow: hidden;
+    padding-top: 20px;
+}
+.title-main-menu {
+    line-height: 40px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #ce0707;
+    font-weight: bold;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+    padding-right: 20px;
+}
+.title-main-menu i {
+    font-size: 24px;
+    margin-top: -4px;
+    vertical-align: middle;
+}
+#nav{
+    display: block;
+    overflow: hidden;
+}
+.title-main-menu{
+    float: left;
+}
+.title-main-menu span{
+    font-size: 14px;
+}
+.nav-address {
+    float: left;
+    margin-top: 8px;
+    margin-left: 74px;
+    max-width: 600px;
+    font-size: 14px;
+}
+.hot-line{
+    background: url(./images/hot-line.png);
+    float: right;
+    width: 215px;
+    height: 40px;
+    
+}
+.hot-line p{
+    float: right;
+    margin-right: 20px;
+    color: yellowgreen;
+    padding-top: 10px;
+}
+#nav{
+    display: block;
+    overflow: hidden;
+
+}
+#nav2{
+    display: block;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 14px;
+    padding-top: 10px;
+    border-top: solid 1px grey ;
+}
+.nav-link{
+    display: inline;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display: block;
+    display: inline;
+    white-space: nowrap;
+    font-size: 12px ;
+    border: none;
+}
+
+.ul-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 50px;
+    left: 0;
+    z-index: 9;
+}
+#nav_vertical > ul > li {
+
+    height: 55px;
+    float: left;
+    padding: 0 6px;
+    text-align: center;
+    z-index: 99;
+}
+.icon-link{
+    display: block;
+    height: 30px;
+    padding-top: 5px;
+    line-height: 30px;
+    text-align: center;
+    
+}
+.icon-link img{
+    margin-top: 0;
+    height: 20px;
+    border: none;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.ul-menu li{
+    display: list-item;
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+.ul-menu li span{
+    margin: 0;
+    padding: 0;
+}
+.container ul li {
+    float: left;
+    position: relative;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.icon-link a{
+    font-size: 12px;
+}
+#main{
+    display: block;
+    overflow: hidden;
+    background-color: #f0eded;
+    padding-top: 20px;
+}
+.left-side{
+    float: left;
+    width: 212px;
+    margin-right: 20px;
+}
+.left-side a{
+    color: #222;
+    text-decoration: none;
+}
+.left-side a:hover{
+    color:#ce0707;
+}
+.title-box{
+    line-height: 40px;
+    background: #ce0707;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0 10px;
+}
+.content-box{
+    border: solid 1px #ccc;
+}
+.content-box a{
+    display: block;
+    padding: 8px 10px;
+}
+.right-side{
+    float: left;
+    display: block;
+    width: 850px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #ffffff;
+    font-size: 14px;
+    font-family: 'Roboto',arial,Helvetica,sans-serif;
+    margin-bottom: 30px;
+}
+.right-side h1{
+    margin-top: 0;
+    border-bottom: solid 1px #ddd;
+    padding-bottom: 8px;
+    font-weight: 500;
+    font-size: 2em;
+}
+.right-side p{
+    font-family: Arial;
+    text-align: justify;
+}
+.right-side img{
+    border: none;
+    max-width: 100%;
+    height: auto;
+}
+#home-contact {
+    height: 40px;
+    line-height: 40px;
+    background: #f8e5e4;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+#home-contact .title:after {
+    content: '';
+    display: block;
+    width: 0;
+    border: solid 20px transparent;
+    border-left-color: #ce0707;
+    position: absolute;
+    right: -40px;
+    top: 0;
+}
+#home-contact .title {
+    background: #ce0707;
+    float: left;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 15px;
+    position: relative;
+    padding-right: 5px;
+}
+.title-box-center{
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    padding-right: 10px;
+    border-bottom: solid 2px #ce0707; 
+    margin-top: 30px;
+}
+.title-box-center .h-title{
+    float: left;
+    color: #fff;
+    padding-left: 15px;
+    line-height: 42px;
+    background: url(./images/bg_title_box_2019.png) right top;
+    padding-right: 40px;
+  
+}
+.title-box-center h2{
+    margin: 0;
+    padding: 0 10px;
+    font-size: 17px;
+}
+.h-title{
+    text-transform: uppercase;
+    white-space: nowrap;
+    
+}
+.sub-cat-title{
+    display: inline;
+}
+.sub-cat-title a{
+    text-decoration: none;
+    padding: 0 5px;
+    border-left: solid 1px #c3c3c3;
+    color: #e80000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+}
+.sub-cat-title a:first-child{
+    border: none;
+}
+.wow{
+    display: block;
+    overflow: hidden;
+}
+.title-box-center .viewall {
+    float: right;
+    text-decoration: none;
+    color: #1c1c1c;
+    padding-right: 0;
+    font-size: 14px;
+}
+#main-home{
+    display: block;
+    background: #f0eded;
+    overflow: hidden;
+    padding: 30px 0 ;
+}
+.container{
+    padding-left: 0px ;
+    padding-right: 0px;
+}
+.title{
+    display: inline;
+}
+#content-top {
+    display: block;
+    overflow: hidden;
+    background-color:#f0eded ;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+#right-top-content{
+    float: right;
+}
+#hot-news .top-news {
+        margin: 0;
+        border-bottom: dotted 1px #ccc;
+        overflow: hidden;
+        padding: 10px 0;
+}
+#hot-news h3 a{
+    text-decoration: none;
+    color: #222;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 5px;
+    max-width: 75%;
+}
+#hot-news h3 a:hover{
+    color: #ce0707;
+}
+#hot-news a{
+    text-decoration: none;
+    line-height: 16px;
+    color: #333;
+}
+#hot-news a img{
+    width: 80px;
+    margin-right: 7px;
+    max-width: 54px;
+    float: left;
+    border: none;
+    max-width: 100%;
+    height: auto;
+}
+.top-news{
+    padding-bottom: 20px;
+}
+#slide-top{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+#category-top{
+    display: block;
+    overflow: hidden;
+}
+.left-category img{
+    width: 100%;
+    vertical-align: middle;
+    float: left;
+}
+.col-sm-4{
+    float: left;
+}
+#home-policy {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: block;
+}
+.policy-content{
+    display: block;
+    float: left;
+    border: solid 2px #222;
+    width: 366px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+.policy-content:first-child{
+    margin-left: 0;
+}
+#home-policy a{
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #222;
+}
+#home-policy2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: block;
+}
+.policy-content2 {
+    display: block;
+    float: left;
+    width: 366px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 20px;
+    background-color: #ce0707;
+}
+.policy-content2:first-child{
+    margin-left: 0;
+}
+#home-policy2 a{
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #222;
+}
