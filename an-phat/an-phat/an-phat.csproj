@@ -139,11 +139,16 @@
     <Content Include="Images\Footer\thong-bao.png" />
     <Content Include="Images\Footer\youtube.png" />
     <Content Include="Images\HeaderImg\anphatpc.png" />
+    <Content Include="Images\HeaderImg\chinhhang.png" />
+    <Content Include="Images\HeaderImg\doitra.png" />
     <Content Include="Images\HeaderImg\flash-sale.png" />
+    <Content Include="Images\HeaderImg\hoadon.png" />
     <Content Include="Images\HeaderImg\imgbannertop.png" />
+    <Content Include="Images\HeaderImg\lien-he.png" />
     <Content Include="Images\HeaderImg\search.png" />
     <Content Include="Images\HeaderImg\tin-tuc.png" />
     <Content Include="Images\HeaderImg\tra-gop.png" />
+    <Content Include="Images\HeaderImg\vanchuyen.png" />
     <Content Include="Images\HeaderImg\xay-dung.png" />
     <Content Include="Images\ImgHeader\app_store.png" />
     <Content Include="Images\ImgHeader\cat_042bafb1c8ef098b2fb47dee233345ea.png" />
