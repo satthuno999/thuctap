@@ -22,9 +22,7 @@
 <body>
     @{ 
         Html.RenderPartial("Header");
-    }
-    @{ 
-        Html.RenderPartial("menu");
+        Html.RenderPartial("Menu");
     }
     <div id="main">
         @RenderBody()
@@ -46,6 +44,7 @@
     @{
         Html.RenderPartial("Footer");
     }
+    @{ Html.RenderPartial("Home_fixed");}
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
