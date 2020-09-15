@@ -138,7 +138,10 @@
     <Content Include="Images\Footer\facebook.png" />
     <Content Include="Images\Footer\thong-bao.png" />
     <Content Include="Images\Footer\youtube.png" />
+    <Content Include="Images\HeaderImg\10_Aug4313ee7544c2117da11669f735c6d1ea.png" />
+    <Content Include="Images\HeaderImg\19_Aug19658737dc0c64132deeb1063d7e894b.png" />
     <Content Include="Images\HeaderImg\anphatpc.png" />
+    <Content Include="Images\HeaderImg\giohang.png" />
     <Content Include="Images\HeaderImg\imgbannertop.png" />
     <Content Include="Images\login\bg_title_box_2019.png" />
     <Content Include="Images\login\log-in-with-facebook.jpg" />
@@ -174,6 +177,7 @@
     <Content Include="Views\Home\Register.cshtml" />
     <Content Include="Views\Home\Header.cshtml" />
     <Content Include="Views\Home\menu.cshtml" />
+    <Content Include="Views\Home\Home_fixed.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

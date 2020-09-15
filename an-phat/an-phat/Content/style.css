@@ -237,43 +237,95 @@ p.mail {
 }
 .register-lerft p {
     margin-bottom: 15px;
+    font-size: 18px;
 }
 .register-right{
 
 }
-.register-right input {
+.input {
     display: block;
-    margin-bottom: 10px;
-    width: 280px;
+    margin-bottom: 13px;
 }
-:root {
-    --white-color: #fff;
-    --black-color: #000;
-    --text-color: #333;
+.input input {
+        width: 300px;
+        height: 25px;
+        padding-left: 5px;
+        border: solid 1px #ddd;
 }
-
-* {
-    box-sizing: inherit;
+.input input[type="radio"]{
+    width: auto;
+    vertical-align: middle;
+    margin-right: 10px;
 }
-
-html {
-    font-size: 62.5%;
-    line-height: 1.6rem;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
+.input p{
+    display: inline;
+    font-size:18px;
+    vertical-align: middle;
+    margin-right: 5px;
 }
-
-.grid {
-    width: 1300px;
-    max-width: 100%;
-    margin: 0 auto;
+.input span {
+        color: #ff0000;
+        font-size: 20px;
+        vertical-align: middle;
 }
-
-.grid__full-width {
+#fixed-banner {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 204px;
+    margin: auto;
+    z-index: 99999;
     width: 100%;
 }
+#fixed-banner .fixed-left {
+    position: absolute;
+    left: 15px;
+}
+#fixed-banner a {
+    color: #333;
+    text-decoration: none;
+}
+#fixed-banner img{
+    width: 150px;
+    border: none;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+#fixed-banner .fixed-right {
+    position: absolute;
+    right: 15px;
+}
+#fixed-cart {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 999;
+    width: 60px;
+    height: 60px;
+    background-color: #546ce8;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+}
+#count-shoping-cart {
+    display: block;
+    color: #fff;
+    margin-top: 6px;
+    margin-bottom: -8px;
+    font-size: 16px;
+}
+.cart-img {
+    width: 40px;
+    height: 40px;
+    background-position: -82px -177px;
+    margin-left: -8px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.cart-img img {
+   vertical-align: middle;
+}
+.ggmap{
 
-.grid__row {
-    display: flex;
-    flex-wrap: wrap;
 }
