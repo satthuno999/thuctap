@@ -39,16 +39,10 @@
         </div>
         <!--logn with -->
         <div class="login-with">
-            <div class="with-gmail">
-                <a href="#">
-                    <img src="~/Images/login/log-in-with-google.jpg" />
-                </a>
-            </div>
-            <div class="with-fb">
-                <a href="#">
-                    <img src="~/Images/login/log-in-with-facebook.jpg" />
-                </a>
-            </div>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <fb:login-button scope="public_profile,email"
+                             onlogin="checkLoginState();">Login with Facebook
+            </fb:login-button>
         </div>
     </div>
 </div>

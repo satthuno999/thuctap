@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="206029603580-g72fhpu6mt8oilrd61n0bgh8v8rltjl4.apps.googleusercontent.com">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -20,7 +21,11 @@
 
 </head>
 <body>
-    @{ 
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&autoLogAppEvents=1&version=v8.0&appId=705335253394839" nonce="q7WB7ufr"></script>
+    <script src="~/Content/LoginMain.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    @{
         Html.RenderPartial("Header");
     }
     <div id="main">
