@@ -14,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>an_phat</RootNamespace>
     <AssemblyName>an-phat</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -25,7 +25,6 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -49,14 +48,16 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
@@ -101,7 +102,6 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -142,28 +142,7 @@
     <Content Include="Images\HeaderImg\19_Aug19658737dc0c64132deeb1063d7e894b.png" />
     <Content Include="Images\HeaderImg\anphatpc.png" />
     <Content Include="Images\HeaderImg\giohang.png" />
-    <Content Include="Images\HeaderImg\flash-sale.png" />
     <Content Include="Images\HeaderImg\imgbannertop.png" />
-    <Content Include="Images\HeaderImg\search.png" />
-    <Content Include="Images\HeaderImg\tin-tuc.png" />
-    <Content Include="Images\HeaderImg\tra-gop.png" />
-    <Content Include="Images\HeaderImg\xay-dung.png" />
-    <Content Include="Images\ImgHeader\app_store.png" />
-    <Content Include="Images\ImgHeader\cat_042bafb1c8ef098b2fb47dee233345ea.png" />
-    <Content Include="Images\ImgHeader\cat_095cb4be732b3d094b1ad78b0577a33a.jpg" />
-    <Content Include="Images\ImgHeader\cat_1073e9906b9dd89e0e453d1bc5ec4212.png" />
-    <Content Include="Images\ImgHeader\cat_253ba2e2e09d924162a97aabca93b45d.jpg" />
-    <Content Include="Images\ImgHeader\cat_30c65344cf0043629e4907d5c2120af3.png" />
-    <Content Include="Images\ImgHeader\cat_80fc29d6aefc322cceb8fce7a99db34c.png" />
-    <Content Include="Images\ImgHeader\cat_8a7100a2bf10de1685a042557ef4ee77.png" />
-    <Content Include="Images\ImgHeader\cat_9b0847d775ff7f94b7bab410471d593f.png" />
-    <Content Include="Images\ImgHeader\cat_a2e098b9730b13b0f4a5fa64ee45901c.png" />
-    <Content Include="Images\ImgHeader\cat_b706c0f50035bddb63ca6e91efef7703.png" />
-    <Content Include="Images\ImgHeader\cat_cf48adbcc24dd52850830b617fdce703.png" />
-    <Content Include="Images\ImgHeader\cat_f9fc468337e44b7e6b994b32dc8b8d44.png" />
-    <Content Include="Images\ImgHeader\google_play.png" />
-    <Content Include="Images\ImgHeader\hot-line.png" />
-    <Content Include="Images\ImgHeader\qrcode.png" />
     <Content Include="Images\login\bg_title_box_2019.png" />
     <Content Include="Images\login\log-in-with-facebook.jpg" />
     <Content Include="Images\login\log-in-with-google.jpg" />
