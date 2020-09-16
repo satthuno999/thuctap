@@ -200,6 +200,8 @@
     <Content Include="Views\Home\Register.cshtml" />
     <Content Include="Views\Home\Header.cshtml" />
     <Content Include="Views\Home\menu.cshtml" />
+    <Content Include="Views\Shared\_Layout1.cshtml" />
+    <Content Include="Views\Home\SlideEasy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
