@@ -1,4 +1,5 @@
 ﻿//LOGIN FB
+//[1] Load các thành phần cần thiết
 window.fbAsyncInit = function () {
     FB.init({
         appId: '3062992443809180',
@@ -8,6 +9,10 @@ window.fbAsyncInit = function () {
     });
 
     FB.AppEvents.logPageView();
+    
+    FB.getLoginStatus(function (response) {
+        statusChangeCallback(response);
+    });
 
 };
 
@@ -20,23 +25,34 @@ window.fbAsyncInit = function () {
 }(document, 'script', 'facebook-jssdk'));
 
 
-function checkLoginState() {
-    FB.getLoginStatus(function (response) {
-        statusChangeCallback(response);
-    });
-}
-
-function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
+//[2] Xử lý trạng thái đăng nhập
+function statusChangeCallback(response) {  
     console.log('statusChangeCallback');
-    console.log(response);                   // The current login status of the person.
-    if (response.status === 'connected') {   // Logged into your webpage and Facebook.
-        alert("Nguyên ăn cức " );
-
-    } else {                                 // Not logged into your webpage or we are unable to tell.
-        document.getElementById('status').innerHTML = 'Please log ' +
-            'into this webpage.';
+    console.log(response);                   
+    if (response.status === 'connected') {
+        testAPI();
+    } else {
+        alert('login di');
     }
 }
+
+//[3] Yêu cầu đăng nhập FB
+function RequestLoginFB() {
+    window.location = 'https://graph.facebook.com/oauth/authorize?client_id=3062992443809180&scope=public_profile,email&redirect_uri=https://localhost:44336/'
+}
+
+//[4] API
+function testAPI() {
+    FB.api(
+        '/me',
+        'GET',
+        { "fields": "id,name,email" },
+        function (response) {
+            alert('Hello  ' + response.name + ' Email: ' + response.email + ' ID:  ' + response.id);
+        }
+    );
+}
+
 
 //END LOGIN FB------------------------------------
 

@@ -40,9 +40,11 @@
         <!--logn with -->
         <div class="login-with">
             <div class="g-signin2" data-onsuccess="onSignIn"></div>
-            <fb:login-button scope="public_profile,email"
-                             onlogin="checkLoginState();">Login with Facebook
-            </fb:login-button>
+            <div class="with-fb">
+                <a onclick="RequestLoginFB()">
+                    <img src="~/Images/login/log-in-with-facebook.jpg" />
+                </a>
+            </div>
         </div>
     </div>
 </div>
