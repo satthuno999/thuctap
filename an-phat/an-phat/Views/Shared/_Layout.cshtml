@@ -27,6 +27,10 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     @{
         Html.RenderPartial("Header");
+        Html.RenderPartial("Menu");
+        Html.RenderPartial("SlideEasy");
+        Html.RenderPartial("BeforeFooter");
+
     }
     <div id="main">
         @RenderBody()
@@ -48,6 +52,7 @@
     @{
         Html.RenderPartial("Footer");
     }
+    @{ Html.RenderPartial("Home_fixed");}
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
