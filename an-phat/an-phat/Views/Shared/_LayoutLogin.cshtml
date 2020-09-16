@@ -21,16 +21,15 @@
 
 </head>
 <body>
-    @{ 
+    @{
         Html.RenderPartial("Header");
-        Html.RenderPartial("Menu");        
+        Html.RenderPartial("Menu");
 
     }
     <div id="main">
         @RenderBody()
 
-        @{ 
-            Html.RenderPartial("SlideEasy");
+        @{
             Html.RenderPartial("BeforeFooter");
         }
         <div class="notification container">
