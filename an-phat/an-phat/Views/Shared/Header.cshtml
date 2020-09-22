@@ -5,27 +5,30 @@
     </a>
 </div>
 <div class="navtop" id="navtop">
-    <nav class="navbar navbar-expand-lg navbar-light container header-nav">
-        <div class="collapse navbar-collapse justify-content-center  col-sm-9" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown" id="dropdown" onmouseover="bigImg(dropdownctn)" onmouseout="normalImg(dropdownctn)">
-                    <a class="nav-link" href="#"><i class="fas fa-phone-alt"></i>TƯ VẤN BÁN HÀNG</a>
+    <nav class="navtop_list">
+        <div class="navtop_list-item">
+            <ul class="navtop_item">
+                <li class="nav-item" onmouseover="bigImg(dropdownctn)" onmouseout="normalImg(dropdownctn)">
+                    <span class="header__navbar-pulse1"></span>
+                    <a class="nav-link" href="#">
+                    <img class="nav-img " src="~/Images/HeaderImg/lien-he.png"/>TƯ VẤN BÁN HÀNG
+                    </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="#"><i class="fas fa-gifts"></i> HÀNG CHÍNH HÃNG</a>
+                    <a class="nav-link" href="#"><img class="nav-img" src="~/Images/HeaderImg/chinhhang.png"/>HÀNG CHÍNH HÃNG</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="#"><i class="fas fa-hand-holding-usd"></i> ĐỔI TRẢ MIỄN PHÍ</a>
+                    <a class="nav-link" href="#"><img class="nav-img" src="~/Images/HeaderImg/doitra.png"/>ĐỔI TRẢ MIỄN PHÍ</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="#"><i class="fas fa-truck-moving"></i> MIỄN PHÍ VẬN CHUYỂN</a>
+                    <a class="nav-link" href="#"><img class="nav-img" src="~/Images/HeaderImg/vanchuyen.png" />MIỄN PHÍ VẬN CHUYỂN</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="#"><i class="fas fa-file-invoice-dollar"></i> IN HÓA ĐƠN ĐIỆN TỬ</a>
+                    <a class="nav-link" href="#"><img class="nav-img" src="~/Images/HeaderImg/hoadon.png" /> IN HÓA ĐƠN ĐIỆN TỬ</a>
                 </li>
             </ul>
         </div>
-        <div class="collapse navbar-collapse justify-content-center col-sm-4">
+        <div class="">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <div class="nav-link">@Html.ActionLink("Đăng Ký", "Register", "Home")</div>
@@ -120,7 +123,11 @@
 <!--END HEADER-->
 <div class="header_logo">
     <div class="container_logo">
-        <div><img src="~/Images/HeaderImg/anphatpc.png"></div>
+        <div>
+            <a href="@Url.Action("Index", "Home")" title="List View">
+                <img src="@Url.Content("~/Images/HeaderImg/anphatpc.png")">
+            </a>
+        </div>
         <div id="#search">
             <form action="">
                 <select name="scat_id">
