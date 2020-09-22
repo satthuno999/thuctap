@@ -1,5 +1,6 @@
 ﻿@{ Layout = "~/Views/Shared/_LayoutLogin.cshtml";
 }
+@Scripts.Render("~/bundles/LoginMain")
 <div class="container" id="login">
     <!--title-->
     <div class="title-box-center wow ">
@@ -43,10 +44,11 @@
         <div class="login-with">
             <div class="g-signin2" data-onsuccess="onSignIn"></div>
             <div class="with-fb">
-                <a href="#"   onclick="RequestLoginFB()">
+                <a href="#" onclick="RequestLoginFB()">
                     <img src="~/Images/login/log-in-with-facebook.jpg" />
                 </a>
             </div>
         </div>
     </div>
 </div>
+<script src="~/Scripts/LoginMain.js"></script>

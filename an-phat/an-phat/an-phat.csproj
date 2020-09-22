@@ -131,17 +131,51 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
-    <Compile Include="Data\AnPhat.cs" />
-    <Compile Include="Data\Category.cs" />
-    <Compile Include="Data\Image.cs" />
-    <Compile Include="Data\Order.cs" />
-    <Compile Include="Data\OrderDetail.cs" />
-    <Compile Include="Data\Product.cs" />
-    <Compile Include="Data\ProductImage.cs" />
-    <Compile Include="Data\ProductProperty.cs" />
-    <Compile Include="Data\PropertyCategory.cs" />
-    <Compile Include="Data\sysdiagram.cs" />
-    <Compile Include="Data\User.cs" />
+    <Compile Include="Data\AnPhat.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnPhat.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\AnPhat.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnPhat.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\AnPhat.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnPhat.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Category.cs">
+      <DependentUpon>AnPhat.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Image.cs">
+      <DependentUpon>AnPhat.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Order.cs">
+      <DependentUpon>AnPhat.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\OrderDetail.cs">
+      <DependentUpon>AnPhat.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Product.cs">
+      <DependentUpon>AnPhat.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ProductImage.cs">
+      <DependentUpon>AnPhat.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ProductProperty.cs">
+      <DependentUpon>AnPhat.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\PropertyCategory.cs">
+      <DependentUpon>AnPhat.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\sysdiagram.cs">
+      <DependentUpon>AnPhat.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\User.cs">
+      <DependentUpon>AnPhat.tt</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -152,6 +186,16 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Data\AnPhat.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AnPhat.edmx</DependentUpon>
+      <LastGenOutput>AnPhat.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Data\AnPhat.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AnPhat.edmx</DependentUpon>
+      <LastGenOutput>AnPhat.cs</LastGenOutput>
+    </Content>
     <Content Include="Images\Máy tính xách tay-Laptop\DDR4 RAM Laptop Kingston 8G bus 2666MHz %28KVR26S19S88%29\26760_ram_kingston_laptop_1_1.jpg" />
     <Content Include="Images\Máy tính xách tay-Laptop\Laptop Asus Vivobook S14 S433FA-EB052T - Trắng\33554_do.jpg" />
     <Content Include="Images\Máy tính xách tay-Laptop\Laptop Asus ZenBook Pro Duo UX581GV-H2029T\1.jpg" />
@@ -228,6 +272,13 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\style.css" />
+    <EntityDeploy Include="Data\AnPhat.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AnPhat.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Data\AnPhat.edmx.diagram">
+      <DependentUpon>AnPhat.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -282,6 +333,9 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
