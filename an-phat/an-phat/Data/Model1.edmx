@@ -13,6 +13,13 @@
           <Property Name="CategoryName" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="ParentID" Type="int" />
         </EntityType>
+        <EntityType Name="District">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="NameDistrict" Type="nvarchar" MaxLength="45" />
+        </EntityType>
         <EntityType Name="Images">
           <Key>
             <PropertyRef Name="ID" />
@@ -217,6 +224,7 @@
         </Association>
         <EntityContainer Name="AnPhatDBModelStoreContainer">
           <EntitySet Name="Categorys" EntityType="Self.Categorys" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="District" EntityType="Self.District" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Images" EntityType="Self.Images" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="OrderDetails" EntityType="Self.OrderDetails" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
@@ -277,6 +285,13 @@
           <Property Name="ParentID" Type="Int32" />
           <NavigationProperty Name="PropertyCategories" Relationship="Self.FK__PropertyC__Categ__276EDEB3" FromRole="Categorys" ToRole="PropertyCategory" />
           <NavigationProperty Name="ProductProperties" Relationship="Self.fk_property_id_category" FromRole="Categorys" ToRole="ProductProperty" />
+        </EntityType>
+        <EntityType Name="District">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="NameDistrict" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Image">
           <Key>
@@ -496,8 +511,9 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="AnPhatDBEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="AnPhatDB" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Categorys" EntityType="Self.Category" />
+          <EntitySet Name="Districts" EntityType="Self.District" />
           <EntitySet Name="Images" EntityType="Self.Image" />
           <EntitySet Name="OrderDetails" EntityType="Self.OrderDetail" />
           <EntitySet Name="Orders" EntityType="Self.Order" />
@@ -549,13 +565,21 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="AnPhatDBModelStoreContainer" CdmEntityContainer="AnPhatDBEntities">
+        <EntityContainerMapping StorageEntityContainer="AnPhatDBModelStoreContainer" CdmEntityContainer="AnPhatDB">
           <EntitySetMapping Name="Categorys">
             <EntityTypeMapping TypeName="AnPhatDBModel.Category">
               <MappingFragment StoreEntitySet="Categorys">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
                 <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Districts">
+            <EntityTypeMapping TypeName="AnPhatDBModel.District">
+              <MappingFragment StoreEntitySet="District">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NameDistrict" ColumnName="NameDistrict" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -13,10 +13,10 @@ namespace an_phat.Data
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class AnPhatDBEntities : DbContext
+    public partial class AnPhatDB : DbContext
     {
-        public AnPhatDBEntities()
-            : base("name=AnPhatDBEntities")
+        public AnPhatDB()
+            : base("name=AnPhatDB")
         {
         }
     
@@ -26,6 +26,7 @@ namespace an_phat.Data
         }
     
         public virtual DbSet<Category> Categorys { get; set; }
+        public virtual DbSet<District> Districts { get; set; }
         public virtual DbSet<Image> Images { get; set; }
         public virtual DbSet<OrderDetail> OrderDetails { get; set; }
         public virtual DbSet<Order> Orders { get; set; }

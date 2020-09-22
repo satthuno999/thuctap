@@ -4,8 +4,9 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="d8eb2d3841f1412c909f8b111b185dc8" Name="Diagram1">
+      <Diagram DiagramId="3f8a7e9318044c25af21d261e4ab1234" Name="Diagram1">
         <EntityTypeShape EntityType="AnPhatDBModel.Category" Width="1.5" PointX="3.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="AnPhatDBModel.District" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="AnPhatDBModel.Image" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="AnPhatDBModel.OrderDetail" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
         <EntityTypeShape EntityType="AnPhatDBModel.Order" Width="1.5" PointX="3" PointY="14.25" IsExpanded="true" />
@@ -13,7 +14,7 @@
         <EntityTypeShape EntityType="AnPhatDBModel.ProductProperty" Width="1.5" PointX="6" PointY="4.25" IsExpanded="true" />
         <EntityTypeShape EntityType="AnPhatDBModel.Product" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
         <EntityTypeShape EntityType="AnPhatDBModel.PropertyCategory" Width="1.5" PointX="3.75" PointY="10.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AnPhatDBModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AnPhatDBModel.sysdiagram" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="AnPhatDBModel.User" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
         <AssociationConnector Association="AnPhatDBModel.FK__PropertyC__Categ__276EDEB3" ManuallyRouted="false" />
         <AssociationConnector Association="AnPhatDBModel.fk_property_id_category" ManuallyRouted="false" />

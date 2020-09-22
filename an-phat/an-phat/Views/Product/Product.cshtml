@@ -7,3 +7,15 @@
     Html.RenderPartial("SlideEasy");
     Html.RenderPartial("Product_Sale");
 }
+
+@model List<an_phat.Data.Image>
+
+
+
+<div class="container">
+    @foreach (var item in Model)
+    {
+        @item.url
+        <img src="@item.url"/>
+    }
+</div>
