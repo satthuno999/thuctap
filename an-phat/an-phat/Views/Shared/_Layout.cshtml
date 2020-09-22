@@ -15,6 +15,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap-dropdownhover.min.js"></script>
     <script src="https://kit.fontawesome.com/398d1bae7a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     @Styles.Render("~/Content/bootstrap.css")
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -30,13 +31,11 @@
         Html.RenderPartial("Menu");        
 
     }
-    <div id="main">
+    <div id="main" style="padding-top: 20px;">
+
         @RenderBody()
 
-        @{ 
-            Html.RenderPartial("SlideEasy");
-            Html.RenderPartial("BeforeFooter");
-        }
+        
         <div class="notification container">
             <div class="text-notifi col-sm-6">
                 <h4><b> KÊNH THÔNG TIN </b></h4>

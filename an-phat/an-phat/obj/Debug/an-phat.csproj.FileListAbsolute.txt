@@ -235,3 +235,7 @@ C:\Users\SparkQuyn\Documents\GitHub\thuctap\an-phat\an-phat\obj\Debug\an-phat.cs
 C:\Users\SparkQuyn\Documents\GitHub\thuctap\an-phat\an-phat\obj\Debug\an-phat.csproj.CopyComplete
 C:\Users\SparkQuyn\Documents\GitHub\thuctap\an-phat\an-phat\obj\Debug\an-phat.dll
 C:\Users\SparkQuyn\Documents\GitHub\thuctap\an-phat\an-phat\obj\Debug\an-phat.pdb
+C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\EntityFramework.dll
+C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\EntityFramework.xml
+C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\EntityFramework.SqlServer.xml

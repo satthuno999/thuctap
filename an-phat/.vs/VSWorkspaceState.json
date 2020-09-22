@@ -3,9 +3,9 @@
     "",
     "\\an-phat",
     "\\an-phat\\Content",
+    "\\an-phat\\Images",
     "\\an-phat\\Views",
-    "\\an-phat\\Views\\Home",
-    "\\an-phat\\Views\\Shared"
+    "\\an-phat\\Views\\Home"
   ],
   "SelectedNode": "\\an-phat.sln",
   "PreviewInSolutionExplorer": false

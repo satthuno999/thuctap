@@ -123,7 +123,11 @@
 <!--END HEADER-->
 <div class="header_logo">
     <div class="container_logo">
-        <div><img src="~/Images/HeaderImg/anphatpc.png"></div>
+        <div>
+            <a href="@Url.Action("Index", "Home")" title="List View">
+                <img src="@Url.Content("~/Images/HeaderImg/anphatpc.png")">
+            </a>
+        </div>
         <div id="#search">
             <form action="">
                 <select name="scat_id">

@@ -56,6 +56,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -128,10 +130,21 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Data\AnPhat.cs" />
+    <Compile Include="Data\Category.cs" />
+    <Compile Include="Data\Image.cs" />
+    <Compile Include="Data\Order.cs" />
+    <Compile Include="Data\OrderDetail.cs" />
+    <Compile Include="Data\Product.cs" />
+    <Compile Include="Data\ProductImage.cs" />
+    <Compile Include="Data\ProductProperty.cs" />
+    <Compile Include="Data\PropertyCategory.cs" />
+    <Compile Include="Data\sysdiagram.cs" />
+    <Compile Include="Data\User.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\TestController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -139,6 +152,37 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Images\Máy tính xách tay-Laptop\DDR4 RAM Laptop Kingston 8G bus 2666MHz %28KVR26S19S88%29\26760_ram_kingston_laptop_1_1.jpg" />
+    <Content Include="Images\Máy tính xách tay-Laptop\Laptop Asus Vivobook S14 S433FA-EB052T - Trắng\33554_do.jpg" />
+    <Content Include="Images\Máy tính xách tay-Laptop\Laptop Asus ZenBook Pro Duo UX581GV-H2029T\1.jpg" />
+    <Content Include="Images\Máy tính xách tay-Laptop\Laptop Dell Latitude 3400 L3400I5SSD4G %28Đen%29\1.jpg" />
+    <Content Include="Images\Máy tính xách tay-Laptop\Laptop Dell XPS 15 7590 70196711\1.jpeg" />
+    <Content Include="Images\Máy tính xách tay-Laptop\Laptop LG Gram 2020 17Z90N-V.AH75A5 - Dark Silver\1.png" />
+    <Content Include="Images\Máy tính xách tay-Laptop\Laptop MSI GF63 Thin 9SC 400VN\1.png" />
+    <Content Include="Images\Máy tính xách tay-Laptop\Laptop MSI GF63 Thin 9SC 400VN\2.png" />
+    <Content Include="Images\Máy tính xách tay-Laptop\Laptop MSI GF63 Thin 9SC 400VN\3.png" />
+    <Content Include="Images\Máy tính xách tay-Laptop\Laptop MSI Modern 14 A10M 1053VN\1.png" />
+    <Content Include="Images\Máy tính xách tay-Laptop\Laptop MSI Modern 14 A10M 1053VN\2.png" />
+    <Content Include="Images\Máy tính xách tay-Laptop\Laptop MSI Modern 14 A10M 1053VN\3.jpg" />
+    <Content Include="Images\Máy tính xách tay-Laptop\Màn hình máy tính ASUS ProArt PA278QV 27 inch 2K IPS\33436_1.jpg" />
+    <Content Include="Images\Máy tính xách tay-Laptop\Màn hình máy tính Dell P2418HT 23.8 inch - màn hình cảm ứng\23169_originalpng.png" />
+    <Content Include="Images\Máy tính xách tay-Laptop\Màn hình máy tính Dell U2719D UltraSharp 27 inch QHD IPS InfinityEdge %28viền mỏng%29 - 2K\1.jpg" />
+    <Content Include="Images\Máy tính xách tay-Laptop\Màn hình máy tính Samsung LC49J890DKEXXV Cong 49\1.jpg" />
+    <Content Include="Images\Máy tính xách tay-Laptop\Ổ cứng Laptop Western Digital Scorpio Blue 500GB 5400rpm SATA3 2.5\1.jpg" />
+    <Content Include="Images\Slide\1.jpg" />
+    <Content Include="Images\Slide\2.jpg" />
+    <Content Include="Images\Slide\3.jpg" />
+    <Content Include="Images\Slide\4.jpg" />
+    <Content Include="Images\Slide\5.jpg" />
+    <Content Include="Images\Slide\back.png" />
+    <Content Include="Images\Slide\ben_phai.jpg" />
+    <Content Include="Images\Slide\ben_phai1.jpg" />
+    <Content Include="Images\Slide\ben_phai2.jpg" />
+    <Content Include="Images\Slide\ben_phai3.jpg" />
+    <Content Include="Images\Slide\next-512.png" />
+    <Content Include="Images\Slide\next.png" />
+    <Content Include="Images\Slide\prev-512.png" />
+    <Content Include="Scripts\Slide.js" />
     <Content Include="Scripts\LoginMain.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -207,25 +251,24 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Footer.cshtml" />
+    <Content Include="Views\Shared\Footer.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\Register.cshtml" />
-    <Content Include="Views\Home\Header.cshtml" />
-    <Content Include="Views\Home\Menu.cshtml" />
-    <Content Include="Views\Home\Home_fixed.cshtml" />
-    <Content Include="Views\Products\Information_product.cshtml" />
-    <Content Include="Views\Products\Desc_products.cshtml" />
-    <Content Include="Views\Products\Comment_products.cshtml" />
-    <Content Include="Views\Cart\Add_cart.cshtml" />
-    <Content Include="Views\Cart\Order_products.cshtml" />
-    <Content Include="Views\Home\SlideEasy.cshtml" />
+    <Content Include="Views\Shared\Header.cshtml" />
+    <Content Include="Views\Shared\Menu.cshtml" />
+    <Content Include="Views\Shared\Home_fixed.cshtml" />
+    <Content Include="Views\Shared\SlideEasy.cshtml" />
     <Content Include="Views\Shared\_LayoutLogin.cshtml" />
-    <Content Include="Views\Home\BeforeFooter.cshtml" />
+    <Content Include="Views\Shared\BeforeFooter.cshtml" />
+    <Content Include="Views\Home\Slide.cshtml" />
+    <Content Include="Views\Product\Product.cshtml" />
+    <Content Include="Views\Product\Product_Comment.cshtml" />
+    <Content Include="Views\Product\Product_desc.cshtml" />
+    <Content Include="Views\Product\Product_Sale.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\Menu\" />
-    <Folder Include="Views\Test\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

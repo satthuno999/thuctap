@@ -67,5 +67,3 @@ function onSignIn(googleUser) {
 }
 
     //button G
-
-    //End button

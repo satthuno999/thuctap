@@ -1048,15 +1048,14 @@ p.mail {
 .register-lerft p{
     margin-bottom: 19px;
 }
-
-
-
 .container4 {
     width: 1170px;
     height: 40px;
     display: flex;
     background-color: #F8E5E4;
     margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 395px;
     /* color: #89807F: */
 }
 
@@ -1120,4 +1119,235 @@ p.mail {
     border: none;
     outline: 1px solid #ffffff;
     outline-offset: -7px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.anh-slide {
+    position: relative;
+    width: 794px;
+    height: 365px;
+}
+
+._1slide {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 365px;
+    width: 794px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header {
+    position: relative;
+    margin-top: 20px;
+}
+
+.slider {
+    position: relative;
+    width: 794px;
+    height: 415px;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0;
+}
+
+.prev {
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    width: 40px;
+    z-index: 4;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.next {
+    position: absolute;
+    top: 40%;
+    right: 0%;
+    z-index: 4;
+    opacity: 0;
+    visibility: hidden
+}
+
+.nut-slide ul {
+    overflow: hidden;
+    width: 1798px;
+    position: absolute;
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nut-slide li {
+    list-style: none;
+    float: left;
+    width: 198px;
+    height: 50px;
+    line-height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-right: 1px solid white;
+    font-weight: bold;
+    margin-right: 1px;
+}
+
+._1slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nut-slide li.do {
+    background-color: red;
+}
+
+.content {
+    float: right;
+    position: absolute;
+    top: 0px;
+    left: 798px;
+}
+/* Hiệu ứng */
+.slider:hover .prev {
+    animation: di-vao-ben-phai 0.1s forwards;
+}
+
+@-webkit-keyframes di-vao-ben-phai {
+    0% {
+        left: -100%;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0%;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.slider:hover .next {
+    animation: di-vao-ben-trai 0.1s forwards;
+}
+
+@-webkit-keyframes di-vao-ben-trai {
+    0% {
+        right: -100%;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        right: 0%;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+._1slide.troi-sang-trai {
+    animation: troi-sang-trai 0.1s forwards;
+}
+
+@-webkit-keyframes troi-sang-trai {
+    0% {
+        left: 0%;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    100% {
+        left: -100%;
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+._1slide.vao-ben-phai {
+    animation: vao-ben-phai 0.1s forwards;
+}
+
+@-webkit-keyframes vao-ben-phai {
+    0% {
+        left: 100%;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0%;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+._1slide.troi-sang-phai {
+    animation: troi-sang-phai 0.1s forwards;
+}
+
+@-webkit-keyframes troi-sang-phai {
+    0% {
+        left: 0%;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    100% {
+        left: 100%;
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+._1slide.vao-ben-trai {
+    animation: vao-ben-trai 0.1s forwards;
+}
+
+@-webkit-keyframes vao-ben-trai {
+    0% {
+        left: -100%;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0%;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.chuyen-slide.di-chuyen-sang-trai {
+    animation: di-chuyen-sang-trai 0s forwards;
+}
+
+@-webkit-keyframes di-chuyen-sang-trai {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: -796px;
+    }
+}
+
+.chuyen-slide.di-chuyen-sang-phai {
+    animation: di-chuyen-sang-phai 0 forwards;
+}
+
+@-webkit-keyframes di-chuyen-sang-phai {
+    0% {
+        left: -796px;
+    }
+
+    100% {
+        left: 0;
+    }
 }
