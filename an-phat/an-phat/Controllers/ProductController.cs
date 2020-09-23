@@ -13,8 +13,9 @@ namespace an_phat.Controllers
         // GET: Product
         public ActionResult Product()
         {
+            var product = data.PropertyCategories.ToList();
             var test = data.Images.ToList();
-            return View(data.Images.ToList());
+            return View(test);
         }
     }
 }

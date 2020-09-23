@@ -6,10 +6,6 @@ using System.Web;
 
 namespace an_phat.Models
 {
-    
-    public class Product
-    {
-        
 
-    }
+    
 }
