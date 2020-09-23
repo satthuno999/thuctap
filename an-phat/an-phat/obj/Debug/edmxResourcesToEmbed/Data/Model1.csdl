@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AnPhatDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="CategoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ParentID" Type="Int32" />
+    <NavigationProperty Name="PropertyCategories" Relationship="Self.FK__PropertyC__Categ__276EDEB3" FromRole="Categorys" ToRole="PropertyCategory" />
+    <NavigationProperty Name="ProductProperties" Relationship="Self.fk_property_id_category" FromRole="Categorys" ToRole="ProductProperty" />
+  </EntityType>
+  <EntityType Name="District">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="NameDistrict" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Image">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="url" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ProductImages" Relationship="Self.FK__ProductIm__Image__22AA2996" FromRole="Images" ToRole="ProductImage" />
+  </EntityType>
+  <EntityType Name="OrderDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="OrderID" Type="Int32" />
+    <Property Name="ProductID" Type="Int32" />
+    <Property Name="SellPrice" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="SellDiscount" Type="Decimal" Precision="3" Scale="0" />
+    <NavigationProperty Name="User" Relationship="Self.FK__OrderDeta__Order__1FCDBCEB" FromRole="OrderDetails" ToRole="Users" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__OrderDeta__Produ__20C1E124" FromRole="OrderDetails" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="ShipAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="Int32" />
+    <Property Name="OrderDate" Type="DateTime" Precision="3" />
+    <Property Name="OrderTotal" Type="Double" />
+    <Property Name="OrderStatus" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="User" Relationship="Self.FK__Orders__UserID__21B6055D" FromRole="Orders" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="ProductImage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ProductID" Type="Int32" />
+    <Property Name="ImageID" Type="Int32" />
+    <Property Name="ImageType" Type="Byte" />
+    <NavigationProperty Name="Image" Relationship="Self.FK__ProductIm__Image__22AA2996" FromRole="ProductImage" ToRole="Images" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__ProductIm__Produ__239E4DCF" FromRole="ProductImage" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="ProductProperty">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ProductID" Type="Int32" />
+    <Property Name="PropertyID" Type="Int32" />
+    <Property Name="PropertyValue" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="CategoryID" Type="Int32" />
+    <NavigationProperty Name="Category" Relationship="Self.fk_property_id_category" FromRole="ProductProperty" ToRole="Categorys" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__ProductPr__Produ__24927208" FromRole="ProductProperty" ToRole="Products" />
+    <NavigationProperty Name="PropertyCategory" Relationship="Self.FK__ProductPr__Prope__25869641" FromRole="ProductProperty" ToRole="PropertyCategory" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Code" Type="Int32" Nullable="false" />
+    <Property Name="ProductName" Type="String" MaxLength="70" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UnitPrice" Type="Int32" />
+    <Property Name="Price" Type="Int32" />
+    <Property Name="Discount" Type="Int32" />
+    <Property Name="DescriptionProduct" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="OrderDetails" Relationship="Self.FK__OrderDeta__Produ__20C1E124" FromRole="Products" ToRole="OrderDetails" />
+    <NavigationProperty Name="ProductImages" Relationship="Self.FK__ProductIm__Produ__239E4DCF" FromRole="Products" ToRole="ProductImage" />
+    <NavigationProperty Name="ProductProperties" Relationship="Self.FK__ProductPr__Produ__24927208" FromRole="Products" ToRole="ProductProperty" />
+  </EntityType>
+  <EntityType Name="PropertyCategory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="CategoryID" Type="Int32" />
+    <Property Name="PropertyName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ParentID" Type="Int32" />
+    <Property Name="PriorityType" Type="Byte" />
+    <NavigationProperty Name="Category" Relationship="Self.FK__PropertyC__Categ__276EDEB3" FromRole="PropertyCategory" ToRole="Categorys" />
+    <NavigationProperty Name="ProductProperties" Relationship="Self.FK__ProductPr__Prope__25869641" FromRole="PropertyCategory" ToRole="ProductProperty" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserPassword" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserAddress" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserRole" Type="Int32" />
+    <Property Name="PhoneNumber" Type="Int32" />
+    <Property Name="Gender" Type="Boolean" Nullable="false" />
+    <Property Name="Provice" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="OrderDetails" Relationship="Self.FK__OrderDeta__Order__1FCDBCEB" FromRole="Users" ToRole="OrderDetails" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__UserID__21B6055D" FromRole="Users" ToRole="Orders" />
+  </EntityType>
+  <Association Name="FK__PropertyC__Categ__276EDEB3">
+    <End Role="Categorys" Type="Self.Category" Multiplicity="0..1" />
+    <End Role="PropertyCategory" Type="Self.PropertyCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categorys">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PropertyCategory">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_property_id_category">
+    <End Role="Categorys" Type="Self.Category" Multiplicity="0..1" />
+    <End Role="ProductProperty" Type="Self.ProductProperty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categorys">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ProductProperty">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductIm__Image__22AA2996">
+    <End Role="Images" Type="Self.Image" Multiplicity="0..1" />
+    <End Role="ProductImage" Type="Self.ProductImage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Images">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ProductImage">
+        <PropertyRef Name="ImageID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderDeta__Order__1FCDBCEB">
+    <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+    <End Role="OrderDetails" Type="Self.OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="OrderDetails">
+        <PropertyRef Name="OrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderDeta__Produ__20C1E124">
+    <End Role="Products" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="OrderDetails" Type="Self.OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="OrderDetails">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__UserID__21B6055D">
+    <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductIm__Produ__239E4DCF">
+    <End Role="Products" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="ProductImage" Type="Self.ProductImage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ProductImage">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductPr__Produ__24927208">
+    <End Role="Products" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="ProductProperty" Type="Self.ProductProperty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ProductProperty">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductPr__Prope__25869641">
+    <End Role="PropertyCategory" Type="Self.PropertyCategory" Multiplicity="0..1" />
+    <End Role="ProductProperty" Type="Self.ProductProperty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PropertyCategory">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ProductProperty">
+        <PropertyRef Name="PropertyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AnPhatDB123" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Categorys" EntityType="Self.Category" />
+    <EntitySet Name="Districts" EntityType="Self.District" />
+    <EntitySet Name="Images" EntityType="Self.Image" />
+    <EntitySet Name="OrderDetails" EntityType="Self.OrderDetail" />
+    <EntitySet Name="Orders" EntityType="Self.Order" />
+    <EntitySet Name="ProductImages" EntityType="Self.ProductImage" />
+    <EntitySet Name="ProductProperties" EntityType="Self.ProductProperty" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="PropertyCategories" EntityType="Self.PropertyCategory" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK__PropertyC__Categ__276EDEB3" Association="Self.FK__PropertyC__Categ__276EDEB3">
+      <End Role="Categorys" EntitySet="Categorys" />
+      <End Role="PropertyCategory" EntitySet="PropertyCategories" />
+    </AssociationSet>
+    <AssociationSet Name="fk_property_id_category" Association="Self.fk_property_id_category">
+      <End Role="Categorys" EntitySet="Categorys" />
+      <End Role="ProductProperty" EntitySet="ProductProperties" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductIm__Image__22AA2996" Association="Self.FK__ProductIm__Image__22AA2996">
+      <End Role="Images" EntitySet="Images" />
+      <End Role="ProductImage" EntitySet="ProductImages" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderDeta__Order__1FCDBCEB" Association="Self.FK__OrderDeta__Order__1FCDBCEB">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="OrderDetails" EntitySet="OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderDeta__Produ__20C1E124" Association="Self.FK__OrderDeta__Produ__20C1E124">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="OrderDetails" EntitySet="OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__UserID__21B6055D" Association="Self.FK__Orders__UserID__21B6055D">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductIm__Produ__239E4DCF" Association="Self.FK__ProductIm__Produ__239E4DCF">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="ProductImage" EntitySet="ProductImages" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductPr__Produ__24927208" Association="Self.FK__ProductPr__Produ__24927208">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="ProductProperty" EntitySet="ProductProperties" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductPr__Prope__25869641" Association="Self.FK__ProductPr__Prope__25869641">
+      <End Role="PropertyCategory" EntitySet="PropertyCategories" />
+      <End Role="ProductProperty" EntitySet="ProductProperties" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="99034c7d9f1e46b69a2d4bf7ab2020dc" Name="Diagram1">
+        <EntityTypeShape EntityType="AnPhatDBModel.Category" Width="1.5" PointX="3.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="AnPhatDBModel.District" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AnPhatDBModel.Image" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AnPhatDBModel.OrderDetail" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AnPhatDBModel.Order" Width="1.5" PointX="3" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AnPhatDBModel.ProductImage" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AnPhatDBModel.ProductProperty" Width="1.5" PointX="6" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AnPhatDBModel.Product" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AnPhatDBModel.PropertyCategory" Width="1.5" PointX="3.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AnPhatDBModel.sysdiagram" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AnPhatDBModel.User" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <AssociationConnector Association="AnPhatDBModel.FK__PropertyC__Categ__276EDEB3" ManuallyRouted="false" />
+        <AssociationConnector Association="AnPhatDBModel.fk_property_id_category" ManuallyRouted="false" />
+        <AssociationConnector Association="AnPhatDBModel.FK__ProductIm__Image__22AA2996" ManuallyRouted="false" />
+        <AssociationConnector Association="AnPhatDBModel.FK__OrderDeta__Order__1FCDBCEB" ManuallyRouted="false" />
+        <AssociationConnector Association="AnPhatDBModel.FK__OrderDeta__Produ__20C1E124" ManuallyRouted="false" />
+        <AssociationConnector Association="AnPhatDBModel.FK__Orders__UserID__21B6055D" ManuallyRouted="false" />
+        <AssociationConnector Association="AnPhatDBModel.FK__ProductIm__Produ__239E4DCF" ManuallyRouted="false" />
+        <AssociationConnector Association="AnPhatDBModel.FK__ProductPr__Produ__24927208" ManuallyRouted="false" />
+        <AssociationConnector Association="AnPhatDBModel.FK__ProductPr__Prope__25869641" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

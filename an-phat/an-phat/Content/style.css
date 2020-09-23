@@ -20,6 +20,7 @@
     padding-top: 20px;
     font-weight: 550;
 }
+
     #introduce a {
         text-decoration: #ce0707;
         text-decoration: none;
@@ -114,6 +115,7 @@ h3 {
         line-height: 39px;
         background: url(/Images/login/bg_title_box_2019.png) right top;
         padding-right: 40px;
+        font-weight: bold;
     }
 
     .title-box-center h2 {
@@ -236,7 +238,7 @@ p.mail {
     font-size: 12px;
 }
 
-.navtop_list{
+.navtop_list {
     width: 1170px;
     display: flex;
     margin: 0 auto;
@@ -254,15 +256,14 @@ p.mail {
     line-height: 35px;
 }
 
-.nav-img{
+.nav-img {
     width: 30px;
     height: 30px;
 }
 
-.nav-link{
+.nav-link {
     color: #555555;
     font-weight: bold;
-    
 }
 
 #navheader {
@@ -275,7 +276,7 @@ p.mail {
     line-height: 38px;
 }
 
-.nav-item{
+.nav-item {
     padding-right: 15px;
 }
 
@@ -382,7 +383,7 @@ html {
     padding-top: 12px;
 }
 
-.menu-img{
+.menu-img {
     position: relative;
 }
 
@@ -606,7 +607,7 @@ html {
     justify-content: space-evenly;
 }
 
-form {
+.form-search {
     float: left;
     width: 530px;
     height: 42px;
@@ -616,31 +617,70 @@ form {
     vertical-align: middle;
 }
 
-    form select {
-        margin: 2px;
-        outline: none;
-        border: none;
-        float: left;
-        height: 39px;
-        width: 150px;
-        margin-left: 8px;
-    }
+form select {
+    margin: 2px;
+    outline: none;
+    border: none;
+    float: left;
+    height: 20px;
+    width: 150px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
 
-    form input {
-        width: 300px;
-        height: 41px;
-        border: none;
-        margin-right: 10px;
-        background: none;
-        float: left;
-        outline: none;
-        margin-left: 10px;
-    }
+
+form input {
+    width: 280px;
+    height: 25px;
+    border: none;
+    margin-right: 10px;
+    background: none;
+    float: left;
+    outline: none;
+    margin-left: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.choose_gender{
+    line-height: 30px;
+}
+
+.gender_tab{
+    margin-right: 35px;
+}
+
+.gender-navbar {
+    padding-left: 10px;
+    display: flex;
+    float: left;
+}
+
+input.gender{
+    margin-right: 5px;
+    height: 20px;
+}
+
+.gender {
+    width: 12px;
+    padding-right: 3px;
+    margin-right: 10px;
+}
+
+
+
+input#gender {
+    width: 100px !important;
+}
 
 
 .but-search {
     float: right;
     margin-top: -25px;
+}
+
+.info {
+    padding-left: 10px;
 }
 
 
@@ -663,6 +703,7 @@ form {
 #header-right {
     line-height: 63px;
 }
+
 body {
     font-size: 12px;
     font-family: 'Roboto',arial,Helvetica,sans-serif;
@@ -710,22 +751,22 @@ footer a {
     font-size: 12px;
 }
 
-    .infomation {
-        display: block;
-        overflow: hidden;
-        color: #333;
-        overflow: hidden;
-        margin-bottom: 8px;
-        text-decoration: none;
+.infomation {
+    display: block;
+    overflow: hidden;
+    color: #333;
+    overflow: hidden;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+    .infomation a:hover {
+        color: #ce0707;
     }
 
-        .infomation a:hover {
-            color: #ce0707;
-        }
-
-        .infomation a i {
-            vertical-align: middle;
-        }
+    .infomation a i {
+        vertical-align: middle;
+    }
 
 .red {
     color: red;
@@ -938,15 +979,22 @@ p.mail {
 
 .register-lerft p {
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 14px;
 }
 
-.register-right {
+
+form {
+    float: left;
+    width: auto;
+    height: auto;
+    margin-top: 8px;
+    margin-left: 9px;
+    vertical-align: middle;
+    font-size: 14px;
 }
 
 .input {
     display: block;
-    margin-bottom: 13px;
 }
 
     .input input {
@@ -954,9 +1002,11 @@ p.mail {
         height: 25px;
         padding-left: 5px;
         border: solid 1px #ddd;
+        background-color: #fff;
     }
 
         .input input[type="radio"] {
+            width: 12px;
             width: auto;
             vertical-align: middle;
             margin-right: 10px;
@@ -964,7 +1014,7 @@ p.mail {
 
     .input p {
         display: inline;
-        font-size: 18px;
+        font-size: 14px;
         vertical-align: middle;
         margin-right: 5px;
     }
@@ -974,6 +1024,14 @@ p.mail {
         font-size: 20px;
         vertical-align: middle;
     }
+
+.gender {
+    height: 25px;
+    border: none;
+    background: none;
+    outline: none;
+    background-color: #fff;
+}
 
 #fixed-banner {
     position: fixed;
@@ -996,7 +1054,7 @@ p.mail {
     }
 
     #fixed-banner img {
-        width: 150px;
+        width: 110px;
         border: none;
         height: auto;
         max-width: 100%;
@@ -1020,6 +1078,7 @@ p.mail {
     text-align: center;
     display: block;
 }
+
 #count-shoping-cart {
     display: block;
     color: #fff;
@@ -1027,39 +1086,45 @@ p.mail {
     margin-bottom: -8px;
     font-size: 16px;
 }
+
 .cart-img {
     background-position: -82px -177px;
     margin-left: -19px;
     display: inline-block;
     vertical-align: middle;
 }
-.cart-img img {
-    width: 48px;
-    height: 36px;
-    margin-left: 14px;
-}
-.register-right input[type=submit]{
+
+    .cart-img img {
+        width: 48px;
+        height: 36px;
+        margin-left: 14px;
+    }
+
+.register-right input[type=submit] {
     width: 120px;
 }
-.register-right input{
+
+.register-right input {
     display: inline;
     margin-bottom: 5px;
 }
-.register-lerft p{
+
+.register-lerft p {
     margin-bottom: 19px;
 }
+
+
+
 .container4 {
     width: 1170px;
     height: 40px;
     display: flex;
     background-color: #F8E5E4;
     margin: 0 auto;
-    margin-top: 20px;
-    margin-left: 395px;
     /* color: #89807F: */
 }
 
-.title4{
+.title4 {
     height: 40px;
     width: 285px;
     background-color: #CE0707;
@@ -1071,7 +1136,7 @@ p.mail {
     position: relative;
 }
 
-.marquee{
+.marquee {
     width: 100%;
     float: right;
     line-height: 40px;
@@ -1107,12 +1172,27 @@ p.mail {
     border: solid 2px #000000;
     display: block;
     float: left;
-    width: 360px;
+    width: 366px;
     text-align: center;
     font-size: 20px;
     color: #000000;
-    margin-right: 10px;
 }
+
+.icon1 {
+    position: absolute;
+    left: 185px;
+}
+
+.icon2 {
+    position: absolute;
+    left: 585px;
+}
+
+.icon3 {
+    position: absolute;
+    right: 185px;
+}
+
 .protect-icon:hover {
     background-color: #CE0707;
     color: #ffffff;
@@ -1120,234 +1200,47 @@ p.mail {
     outline: 1px solid #ffffff;
     outline-offset: -7px;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+
+
+.login-form {
+    background-color: #F0EDED;
+    font-size: 14px;
 }
 
-.anh-slide {
-    position: relative;
-    width: 794px;
-    height: 365px;
+#email {
+    height: 25px;
+    width: 338px;
+    margin-bottom: 10px;
+    background-color: #fff;
 }
 
-._1slide {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 365px;
-    width: 794px;
-    opacity: 0;
-    visibility: hidden;
+#password {
+    height: 25px;
+    width: 338px;
+    margin-bottom: 10px;
+    background-color: #fff;
 }
 
-.header {
-    position: relative;
-    margin-top: 20px;
-}
-
-.slider {
-    position: relative;
-    width: 794px;
-    height: 415px;
-    cursor: pointer;
-    overflow: hidden;
-    margin: 0;
-}
-
-.prev {
-    position: absolute;
-    top: 40%;
-    left: 0%;
-    width: 40px;
-    z-index: 4;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.next {
-    position: absolute;
-    top: 40%;
-    right: 0%;
-    z-index: 4;
-    opacity: 0;
-    visibility: hidden
-}
-
-.nut-slide ul {
-    overflow: hidden;
-    width: 1798px;
-    position: absolute;
-}
-
-.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-.nut-slide li {
-    list-style: none;
-    float: left;
-    width: 198px;
-    height: 50px;
-    line-height: 50px;
-    background-color: black;
-    color: white;
-    text-align: center;
-    border-right: 1px solid white;
+.btn_red {
+    width: 100px;
+    height: 32px;
+    color: #ffffff;
     font-weight: bold;
-    margin-right: 1px;
+    background-color: #DB0006;
+    margin-left: 10px;
+    border-radius: 3px;
 }
 
-._1slide.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-.nut-slide li.do {
-    background-color: red;
-}
-
-.content {
-    float: right;
-    position: absolute;
-    top: 0px;
-    left: 798px;
-}
-/* Hiệu ứng */
-.slider:hover .prev {
-    animation: di-vao-ben-phai 0.1s forwards;
-}
-
-@-webkit-keyframes di-vao-ben-phai {
-    0% {
-        left: -100%;
-        visibility: hidden;
-        opacity: 0;
+    .btn_red:hover {
+        background-color: gray;
     }
 
-    100% {
-        left: 0%;
-        visibility: visible;
-        opacity: 1;
-    }
+.forget-pass {
+    line-height: 32px;
+    color: #333333;
 }
 
-.slider:hover .next {
-    animation: di-vao-ben-trai 0.1s forwards;
-}
-
-@-webkit-keyframes di-vao-ben-trai {
-    0% {
-        right: -100%;
-        visibility: hidden;
-        opacity: 0;
+    .forget-pass:hover {
+        color: #CE0707;
     }
-
-    100% {
-        right: 0%;
-        visibility: visible;
-        opacity: 1;
-    }
-}
-
-._1slide.troi-sang-trai {
-    animation: troi-sang-trai 0.1s forwards;
-}
-
-@-webkit-keyframes troi-sang-trai {
-    0% {
-        left: 0%;
-        visibility: visible;
-        opacity: 1;
-    }
-
-    100% {
-        left: -100%;
-        visibility: hidden;
-        opacity: 0;
-    }
-}
-
-._1slide.vao-ben-phai {
-    animation: vao-ben-phai 0.1s forwards;
-}
-
-@-webkit-keyframes vao-ben-phai {
-    0% {
-        left: 100%;
-        visibility: hidden;
-        opacity: 0;
-    }
-
-    100% {
-        left: 0%;
-        visibility: visible;
-        opacity: 1;
-    }
-}
-
-._1slide.troi-sang-phai {
-    animation: troi-sang-phai 0.1s forwards;
-}
-
-@-webkit-keyframes troi-sang-phai {
-    0% {
-        left: 0%;
-        visibility: visible;
-        opacity: 1;
-    }
-
-    100% {
-        left: 100%;
-        visibility: hidden;
-        opacity: 0;
-    }
-}
-
-._1slide.vao-ben-trai {
-    animation: vao-ben-trai 0.1s forwards;
-}
-
-@-webkit-keyframes vao-ben-trai {
-    0% {
-        left: -100%;
-        visibility: hidden;
-        opacity: 0;
-    }
-
-    100% {
-        left: 0%;
-        visibility: visible;
-        opacity: 1;
-    }
-}
-
-.chuyen-slide.di-chuyen-sang-trai {
-    animation: di-chuyen-sang-trai 0s forwards;
-}
-
-@-webkit-keyframes di-chuyen-sang-trai {
-    0% {
-        left: 0%;
-    }
-
-    100% {
-        left: -796px;
-    }
-}
-
-.chuyen-slide.di-chuyen-sang-phai {
-    animation: di-chuyen-sang-phai 0 forwards;
-}
-
-@-webkit-keyframes di-chuyen-sang-phai {
-    0% {
-        left: -796px;
-    }
-
-    100% {
-        left: 0;
-    }
-}

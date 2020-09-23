@@ -12,16 +12,9 @@ namespace an_phat.Data
     using System;
     using System.Collections.Generic;
     
-    public partial class ProductProperty
+    public partial class District
     {
         public int ID { get; set; }
-        public Nullable<int> ProductID { get; set; }
-        public Nullable<int> PropertyID { get; set; }
-        public string PropertyValue { get; set; }
-        public Nullable<int> CategoryID { get; set; }
-    
-        public virtual Category Category { get; set; }
-        public virtual Product Product { get; set; }
-        public virtual PropertyCategory PropertyCategory { get; set; }
+        public string NameDistrict { get; set; }
     }
 }
