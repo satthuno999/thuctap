@@ -1,0 +1,102 @@
+﻿@model an_phat.Models.RegistrationModel
+
+<div>
+    <div class="container">
+        <div class="register-title">
+            <div class="title-box-center wow ">
+                <h2 class="h-title"> ĐĂNG KÝ </h2>
+            </div>
+        </div>
+        @using (Html.BeginForm("Register", "Home"))
+        {
+            <table width="100%" id="register">
+                <tr>
+                    <td valign="top">
+                        <table cellpadding="4" cellspacing="0" id="tb_register" style="width: 100%;">
+                            <tr>
+                                <td width="150px">Địa chỉ Email</td>
+                                <td>
+                                    @Html.TextBoxFor(x => x.UserEmail, new { @id = "email", @size = "20",
+                                   @value = "", @onkeyup = "check_user_email(this.value)", @name = "UserEmail"
+                               })
+                                    @Html.ValidationMessageFor(x => x.UserName)
+                                    <b style="color: #ff0000;">*</b>
+                                    <span id="check_user"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mật khẩu</td>
+                                <td>
+                                    @Html.PasswordFor(x => x.UserPassword, new { @id = "password", @class = "boxInput", @size = "20", @name = "UserPassword" })
+                                    @Html.ValidationMessageFor(x => x.UserPassword)
+                                    <b style="color: #ff0000;">*</b>
+                                    <span class="explain"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Nhập lại mật khẩu</td>
+                                <td>
+                                    @Html.PasswordFor(x => x.ConfirmPassword, new { @id = "password1", @class = "boxInput", @size = "20", @name = "ConfirmPassword" })
+                                    @Html.ValidationMessageFor(x => x.ConfirmPassword)
+                                    <b style="color: #ff0000;">*</b>
+                                    <span class="explain"></span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Họ và tên</td>
+                                <td>
+                                    @Html.TextBoxFor(x => x.UserName, new { @id = "full_name", @class = "boxInput", @size = "40", @name = "UserName" })
+                                    @Html.ValidationMessageFor(x => x.UserName)
+
+                                    <b style="color: #ff0000;">*</b>
+                                </td>
+                            </tr>
+                            <tr class="choose_gender">
+                                <td>Giới tính</td>
+                                <td class="gender-navbar">
+                                    <div class="gender_tab">
+                                        @Html.RadioButtonFor(m => m.Gender, "Nam", new { Checked = "checked", value = "1", @class = "gender", @name = "Nam" })Nam
+                                        
+                                   
+                                    </div>
+                                    <div class="gender_tab">
+                                        @Html.RadioButtonFor(m => m.Gender, "Nữ", new { Checked = "checked", value = "0", @class = "gender", @name = "Nam" })Nữ
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tỉnh/Tp</td>
+                                <td>
+                                    @Html.DropDownList("NameDistrict", new SelectList(ViewBag.DistrictList, "ID", "NameDistrict"), new { @name = "NameDistrict" })
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Địa chỉ nhận hàng</td>
+                                <td><input type="text" name="info[address]" id="address" class="boxInput" size="50" value="" /></td>
+                            </tr>
+                            <tr>
+                                <td>Điện thoại di động</td>
+                                <td><input type="text" name="info[mobile]" id="mobile" class="boxInput" size="40" value="" /></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="info">
+                                    (*) Thông tin bắt buộc
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="hidden" name="return_url" value="https://www.anphatpc.com.vn/dang-ky" />
+                                    <input type="submit" value="Đăng ký" class="btn_red" />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        }
+        </div>
+</div>
