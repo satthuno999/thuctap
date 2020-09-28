@@ -1,4 +1,4 @@
-﻿@model an_phat.Models.UserModel
+﻿@model an_phat.Models.RegistrationModel
 
 <div>
     <div class="container">
@@ -16,8 +16,9 @@
                             <tr>
                                 <td width="150px">Địa chỉ Email</td>
                                 <td>
-                                    @Html.TextBoxFor(x => x.UserName, new { @id = "email", @size = "20",
-                                    @value = "" ,@onkeyup = "check_user_email(this.value)" })
+                                    @Html.TextBoxFor(x => x.UserEmail, new { @id = "email", @size = "20",
+                                   @value = "", @onkeyup = "check_user_email(this.value)", @name = "UserEmail"
+                               })
                                     @Html.ValidationMessageFor(x => x.UserName)
                                     <b style="color: #ff0000;">*</b>
                                     <span id="check_user"></span>
@@ -26,7 +27,7 @@
                             <tr>
                                 <td>Mật khẩu</td>
                                 <td>
-                                    @Html.PasswordFor(x => x.UserPassword, new { @id = "password", @class = "boxInput", @size = "20" })
+                                    @Html.PasswordFor(x => x.UserPassword, new { @id = "password", @class = "boxInput", @size = "20", @name = "UserPassword" })
                                     @Html.ValidationMessageFor(x => x.UserPassword)
                                     <b style="color: #ff0000;">*</b>
                                     <span class="explain"></span>
@@ -35,7 +36,7 @@
                             <tr>
                                 <td>Nhập lại mật khẩu</td>
                                 <td>
-                                    @Html.PasswordFor(x => x.ConfirmPassword, new { @id = "password1", @class = "boxInput", @size = "20" })
+                                    @Html.PasswordFor(x => x.ConfirmPassword, new { @id = "password1", @class = "boxInput", @size = "20", @name = "ConfirmPassword" })
                                     @Html.ValidationMessageFor(x => x.ConfirmPassword)
                                     <b style="color: #ff0000;">*</b>
                                     <span class="explain"></span>
@@ -45,8 +46,9 @@
                             <tr>
                                 <td>Họ và tên</td>
                                 <td>
-                                    @Html.TextBoxFor(x => x.UserName, new { @id = "full_name", @class = "boxInput", @size = "40" })
-                          
+                                    @Html.TextBoxFor(x => x.UserName, new { @id = "full_name", @class = "boxInput", @size = "40", @name = "UserName" })
+                                    @Html.ValidationMessageFor(x => x.UserName)
+
                                     <b style="color: #ff0000;">*</b>
                                 </td>
                             </tr>
@@ -54,12 +56,12 @@
                                 <td>Giới tính</td>
                                 <td class="gender-navbar">
                                     <div class="gender_tab">
-                                        @Html.RadioButtonFor(m => m.Gender, "Nam", new { Checked = "checked", value = "1", @class="gender"})Nam
+                                        @Html.RadioButtonFor(m => m.Gender, "Nam", new { Checked = "checked", value = "1", @class = "gender", @name = "Nam" })Nam
                                         
                                    
                                     </div>
                                     <div class="gender_tab">
-                                        @Html.RadioButtonFor(m => m.Gender, "Nữ", new { Checked = "checked", value = "0", @class = "gender" })Nữ
+                                        @Html.RadioButtonFor(m => m.Gender, "Nữ", new { Checked = "checked", value = "0", @class = "gender", @name = "Nam" })Nữ
 
                                     </div>
                                 </td>
@@ -67,7 +69,7 @@
                             <tr>
                                 <td>Tỉnh/Tp</td>
                                 <td>
-                                    @Html.DropDownList("NameDistrict", new SelectList(ViewBag.DistrictList, "ID", "NameDistrict"))
+                                    @Html.DropDownList("NameDistrict", new SelectList(ViewBag.DistrictList, "ID", "NameDistrict"), new { @name = "NameDistrict" })
                                 </td>
                             </tr>
                             <tr>

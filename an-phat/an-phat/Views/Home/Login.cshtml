@@ -1,6 +1,5 @@
-﻿@{ Layout = "~/Views/Shared/_LayoutLogin.cshtml";
-}
-@model an_phat.Models.UserModel
+﻿
+@model an_phat.Models.LoginModel
 <div class="container" id="login">
     <!--title-->
     <div class="title-box-center wow ">
@@ -12,23 +11,25 @@
         <!--form login left-->
         <div class=" col-sm-6 login-left">
             <p>Thông tin khách hàng đăng nhập hệ thống</p>
-            @using (Html.BeginForm("Login", "Home"))
+            @using (Html.BeginForm("Login","Home", FormMethod.Post,
+                                         new { enctype = "multipart/form-data" }))
             {
                 <table class="login-form">
                     <tr id="user">
-                        <td class="mail">Email đăng nhập  </td>
-                        <td>
-                            @Html.TextBoxFor(x => x.UserName, new { @id = "email", @size = "35" })
-                            
-                            
+                        <td class="mail">User Name:</td>
+                        <td class="col-md-10">
+                            @Html.TextBoxFor(x => x.UserName, new { @id = "email", @size = "35", @name = "UserEmail" })
+                            @Html.ValidationMessageFor(x => x.UserName, String.Empty, new { @class = "text-danger" })
+
                         </td>
                     </tr>
                     <tr id="pass">
-                        <td><p class="pass">Mật khẩu </p></td>
-                        <td>
-                            @Html.PasswordFor(x => x.UserPassword, new { @id = "password", @size = "35" })
-                           
-                            
+                        <td><p class="pass">Password:</p></td>
+                        <td class="col-md-10">
+                            @Html.PasswordFor(x => x.UserPassword, new { @id = "password", @size = "35", @name = "UserPassword" })
+                            @Html.ValidationMessageFor(x => x.UserPassword ,String.Empty, new{ @class = "text-danger" })
+
+
                         </td>
                     </tr>
                     <!--but login-->

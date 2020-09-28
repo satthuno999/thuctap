@@ -268,7 +268,6 @@ C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\bin\System.Web.WebPages
 C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\bin\Newtonsoft.Json.xml
 C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\bin\Antlr3.Runtime.pdb
 C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\obj\Debug\an-phat.csprojAssemblyReference.cache
 C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\obj\Debug\an-phat.csproj.CoreCompileInputs.cache
 C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\obj\Debug\an-phat.csproj.CopyComplete
 C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\obj\Debug\an-phat.dll
@@ -322,3 +321,13 @@ C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\bin\roslyn\vbc.exe.conf
 C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\bin\roslyn\vbc.rsp
 C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\bin\roslyn\VBCSCompiler.exe
 C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\bin\WebMatrix.Data.dll
+C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\bin\WebMatrix.WebData.dll
+C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\bin\WebMatrix.Data.xml
+C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\bin\WebMatrix.WebData.xml
+C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\bin\System.Data.SqlClient.dll
+C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\bin\System.Data.SqlClient.xml
+C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\obj\Debug\an-phat.csprojAssemblyReference.cache
+C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\bin\DataAccess.dll
+C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\bin\DataAccess.pdb
+C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\bin\DataAccess.dll.config
