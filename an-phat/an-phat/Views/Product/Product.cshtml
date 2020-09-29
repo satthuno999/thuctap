@@ -1,20 +1,20 @@
 ﻿
 @{
     ViewBag.Title = "Product";
-    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
-}
-@{ 
-    Html.RenderPartial("SlideEasy");
-    Html.RenderPartial("Product_Sale");
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@model List<an_phat.Data.Image>
+ @{ 
+     Html.RenderPartial("SlideEasy");
+ }
+@model IEnumerable<an_phat.Models.ProductModelView>
 
 
 <div class="container">
-    @foreach (var item in Model)
-    {
-        <img src="@item.url" />
-        
-     }
+  @foreach (var item in Model )
+  {
+      @item.ImageUrl<br />
+
+      @item.ProductName<br />
+  }
 </div>
