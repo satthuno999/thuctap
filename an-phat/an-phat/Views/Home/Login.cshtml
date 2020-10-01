@@ -1,50 +1,70 @@
-﻿@{ Layout = "~/Views/Shared/_LayoutLogin.cshtml";
-}
-
+﻿
+@model an_phat.Models.LoginModel
 <div class="container" id="login">
     <!--title-->
     <div class="title-box-center wow ">
         <h2 class="h-title"> Đăng nhập </h2>
     </div>
     <!--form login-->
+
     <div class="form-login">
         <!--form login left-->
         <div class=" col-sm-6 login-left">
             <p>Thông tin khách hàng đăng nhập hệ thống</p>
-            <div class="login-form">
-                <div id="user">
-                    <p class="mail">Email đăng nhập : </p>
-                    <input type="text" size="35" name="email" id="email" />
-                </div>
-                <div id="pass">
-                    <div>
-                        <p class="pass">Mật khẩu : </p>
-                        <input type="password" size="35" name="password" id="password" />
-                    </div>
-                </div>
-            </div>
+            @using (Html.BeginForm("Login","Home", FormMethod.Post,
+                                         new { enctype = "multipart/form-data" }))
+            {
+                <table class="login-form">
+                    <tr id="user">
+                        <td class="mail">User Name:</td>
+                        <td class="col-md-10">
+                            @Html.TextBoxFor(x => x.UserName, new { @id = "email", @size = "35", @name = "UserEmail" })
+                            @Html.ValidationMessageFor(x => x.UserName, String.Empty, new { @class = "text-danger" })
+
+                        </td>
+                    </tr>
+                    <tr id="pass">
+                        <td><p class="pass">Password:</p></td>
+                        <td class="col-md-10">
+                            @Html.PasswordFor(x => x.UserPassword, new { @id = "password", @size = "35", @name = "UserPassword" })
+                            @Html.ValidationMessageFor(x => x.UserPassword ,String.Empty, new{ @class = "text-danger" })
+
+
+                        </td>
+                    </tr>
+                    <!--but login-->
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Đăng nhập" class="btn_red" />
+                            <a href="/quen-mat-khau" class="forget-pass">Quên mật khẩu</a>
+                        </td>
+                    </tr>
+                </table>
+            }
+
+
         </div>
         <!--form login right-->
         <div class="col-sm-6 login-right">
             <b>Bạn chưa là thành viên</b>
             <p>Đăng ký là thành viên để hưởng nhiều lợi ích và đặt mua hàng dễ dàng hơn.</p>
-            <a href="#" class="register">Đăng ký tài khoản</a>
+            <a href="#" class="register"><b>Đăng ký tài khoản</b></a>
         </div>
     </div>
 </div>
 <!--but forgot-->
 <div class="container">
     <div class="forgot">
-        <!--but login-->
-        <div class="but-login">
-            <input type="submit" value="Đăng nhập" class="but-red" />
-            <a href="#" class="but-forgot">Quên mật khẩu</a>
-        </div>
         <!--logn with -->
         <div class="login-with">
-            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <div class="with-gmail">
+                <a href="#">
+                    <img src="~/Images/login/log-in-with-google.jpg" />
+                </a>
+            </div>
             <div class="with-fb">
-                <a onclick="RequestLoginFB()">
+                <a href="#">
                     <img src="~/Images/login/log-in-with-facebook.jpg" />
                 </a>
             </div>

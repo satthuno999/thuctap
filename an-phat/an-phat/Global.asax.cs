@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using System.Web.Security;
+using WebMatrix.WebData;
 
 namespace an_phat
 {
@@ -16,6 +18,26 @@ namespace an_phat
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            SimpleMembershipInitializer();
+
+
+
         }
+
+            private void SimpleMembershipInitializer()
+            {
+               
+                    if (!WebMatrix.WebData.WebSecurity.Initialized)
+                    {
+                        WebSecurity.InitializeDatabaseConnection("AnPhatDB", "Users", "ID", "UserName", true);
+                       
+                    }
+                
+               
+            }
+        }
+    
+          
     }
-}
+    
+
