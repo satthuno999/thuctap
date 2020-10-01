@@ -7,14 +7,95 @@
  @{ 
      Html.RenderPartial("SlideEasy");
  }
-@model IEnumerable<an_phat.Models.ProductModelView>
+@model an_phat.Models.ProductModelView
 
+<div class="container product-sale">
+    <div class="container product-name">
+        <h2>
+            <b>
+               @Model.Product.ProductName
 
-<div class="container">
-  @foreach (var item in Model )
-  {
-      @item.ImageUrl<br />
+            </b>
+        </h2>
+    </div>
+    <div class="container product-sale-content">
+        <div class="col-sm-4 product-image">
+            @foreach(var item in Model.productImageModels)
+            {
+                @item.URL<br />
+            }
+        </div>
+        <div class="col-sm-5 product-property">
+            <div>
+                <div class="col-sm-3 property-name">
+                    @foreach (var item in Model.productPropertyModels)
+                    {
 
-      @item.ProductName<br />
-  }
+                        <p><i class="fa fa-check-circle"></i>@item.PropertyName</p>
+                    }
+
+                </div>
+                <div class="col-sm-9 property-value">
+                    @foreach (var item in Model.productPropertyModels)
+                    {
+                        <p>@item.PropertyValue</p>
+                    }
+                </div>
+            </div>
+            <div class="product-showroom">
+                <p><b>Bảo hành:	24 Tháng , Pin và sạc bảo hành 12 tháng, Đổi mới trong 15 ngày</b></p>
+                <p><b>Hiện đang có tại showroom:</b></p>
+                <ul>
+                    <li>
+                        <a>
+                            49 Thái Hà – P. Trung Liệt – Q. Đống Đa – Hà Nội
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            151 Lê Thanh Nghị - Hai Bà Trưng - Hà Nội
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            158-160 Lý Thường Kiệt – P.14 – Q. 10 – TP HCM
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            84T/14 Trần Đình Xu – P. Cô Giang – Q. 1 – TP HCM
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="product-price-untiprice">
+                <div class="product-price">
+                    <p>Giá Niêm yết: @Model.Product.Price đ</p>
+                </div>
+                <div class="product-untiprice">
+                    <p>Giá Khuyến Mãi: @Model.Product.UnitPrice  <span>[Giá đã có VAT]</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 product-sale-help">
+            <div>
+                <h3><span class="red">Trợ giúp</span></h3>
+                <a href="#">✓ Hướng dẫn đặt hàng flash sale</a>
+                <a href="#">✓ Hướng dẫn mua hàng</a>
+                <a href="#">✓ Chính sách bảo hàng đổi trả</a>
+                <a href="#">✓ Chính sách mua trả góp</a>
+                <a href="#">✓ Chính sách giao hàng</a>
+                <a href="#">✓ Chính sách bảo hành tận nhà</a>
+                <a href="#">✓ Hỗ trợ khách hàng dự án doanh nghiệp</a>
+            </div>
+            <div class="product-hot">
+                <p>
+                    <b>
+                        <font color="red">➤ KHUYẾN MÃI CỰC HOT ĐỪNG BỎ LỠ !!!</font>
+                    </b>
+                </p>
+                <img />
+            </div>
+        </div>
+    </div>
 </div>

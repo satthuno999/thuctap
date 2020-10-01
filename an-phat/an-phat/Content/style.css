@@ -1940,7 +1940,50 @@ form {
     line-height: 32px;
     color: #333333;
 }
-
-    .forget-pass:hover {
-        color: #CE0707;
-    }
+.forget-pass:hover {
+    color: #CE0707;
+}
+.product-sale{
+    background: #ffffff;
+    margin-top: 20px;
+}
+.product-sale-help{
+    font-size: 12px;
+   float: right;
+   margin: 0;
+   padding: 0;
+}
+.product-sale-help a{
+    display: block;
+    margin-bottom: 5px;
+    text-decoration : none;
+    color: #000000;
+} 
+.product-sale-help a:hover{
+    color: red;
+}
+.product-property{
+    margin: 0;
+    padding: 0;
+}
+.property-name{
+    margin: 0;
+    padding: 0;
+}
+.property-value{
+    margin: 0;
+    padding: 0;
+}
+.fa-check-circle{
+    display: inline;
+}
+.fa-check-circle:before {
+    content: "\f058";
+    margin-right: 2px;
+    color:#ff9900;
+}
+.product-hot{
+    margin-top: 50px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}

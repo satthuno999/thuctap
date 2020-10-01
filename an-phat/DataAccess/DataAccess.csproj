@@ -57,7 +57,10 @@
     <Compile Include="Framework\Entity\District.cs" />
     <Compile Include="Framework\Entity\Image.cs" />
     <Compile Include="Framework\Entity\Product.cs" />
+    <Compile Include="Framework\Entity\ProductCategory.cs" />
     <Compile Include="Framework\Entity\ProductImage.cs" />
+    <Compile Include="Framework\Entity\ProductProperty.cs" />
+    <Compile Include="Framework\Entity\PropertyCategory.cs" />
     <Compile Include="Framework\Entity\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

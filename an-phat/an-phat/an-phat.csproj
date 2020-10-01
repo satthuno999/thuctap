@@ -147,7 +147,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\ProductImage.cs" />
     <Compile Include="Models\ProductModelView.cs" />
+    <Compile Include="Models\ProductName.cs" />
+    <Compile Include="Models\ProductProperty.cs" />
     <Compile Include="Models\RegistrationModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -269,6 +272,7 @@
     <Content Include="Views\Product\Product_Comment.cshtml" />
     <Content Include="Views\Product\Product_desc.cshtml" />
     <Content Include="Views\Product\Product_Sale.cshtml" />
+    <Content Include="Views\Product\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

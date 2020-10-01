@@ -1,6 +1,7 @@
 ﻿
 using an_phat.Models;
 using DataAccess.Framework;
+using DataAccess.Framework.Entity;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -14,9 +15,13 @@ namespace an_phat.Controllers
 
     public class HomeController : Controller
     {
+        [HttpGet]
         public ActionResult Index()
         {
-            return View();
+            using (AnPhatDBContext data = new AnPhatDBContext())
+            {
+                return View();
+            }
         }
 
         [HttpGet]

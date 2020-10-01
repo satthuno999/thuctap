@@ -1,7 +1,8 @@
 ﻿
     using DataAccess.Framework.Entity;
     using System;
-    using System.Data.Entity;
+using System.Collections.Generic;
+using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
 
 
@@ -17,13 +18,15 @@
             //public virtual DbSet<Category> Categories { get; set; }
             public virtual DbSet<District> Districts { get; set; }
             public virtual DbSet<Image> Images { get; set; }
-            //public virtual DbSet<OrderDetail> OrderDetails { get; set; }
-            //public virtual DbSet<Order> Orders { get; set; }
-            //public virtual DbSet<ProductCategory> ProductCategories { get; set; }
+
+
+
+        //public virtual DbSet<OrderDetail> OrderDetails { get; set; }
+        //public virtual DbSet<Order> Orders { get; set; }
             public virtual DbSet<ProductImage> ProductImage { get; set; }
-            //public virtual DbSet<ProductProperty> ProductProperties { get; set; }
+            public virtual DbSet<ProductProperty> ProductProperties { get; set; }
             public virtual DbSet<Product> Products { get; set; }
-            //public virtual DbSet<PropertyCategory> PropertyCategories { get; set; }
+            public virtual DbSet<PropertyCategory> PropertyCategories{ get; set; }
             //public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
             public virtual DbSet<User> Users { get; set; }
             //public virtual DbSet<webpages_Membership> webpages_Membership { get; set; }

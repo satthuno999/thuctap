@@ -77,7 +77,6 @@ C:\Users\Admin\source\repos\an-phat\an-phat\obj\Debug\an-phat.csproj.CoreCompile
 C:\Users\Admin\source\repos\an-phat\an-phat\obj\Debug\an-phat.csproj.CopyComplete
 C:\Users\Admin\source\repos\an-phat\an-phat\obj\Debug\an-phat.dll
 C:\Users\Admin\source\repos\an-phat\an-phat\obj\Debug\an-phat.pdb
-C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\SparkQuyn\Documents\GitHub\thuctap\an-phat\an-phat\bin\an-phat.dll.config
 C:\Users\SparkQuyn\Documents\GitHub\thuctap\an-phat\an-phat\bin\an-phat.dll
 C:\Users\SparkQuyn\Documents\GitHub\thuctap\an-phat\an-phat\bin\an-phat.pdb
@@ -249,8 +248,7 @@ C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\obj\Debug\an-phat.cspro
 C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\bin\DataAccess.dll
 C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\bin\DataAccess.pdb
 C:\Users\Nguyen\Documents\GitHub\thuctap\an-phat\an-phat\bin\DataAccess.dll.config
-C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\obj\Debug\an-phat.csprojAssemblyReference.cache
-C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\obj\Debug\an-phat.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\EntityFramework.xml
 C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\an-phat.dll.config
 C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\an-phat.dll
 C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\an-phat.pdb
@@ -263,6 +261,7 @@ C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\roslyn\csi.rsp
 C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
 C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\roslyn\Microsoft.CSharp.Core.targets
@@ -322,7 +321,6 @@ C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\WebMatrix.Data.dll
 C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\WebMatrix.WebData.dll
 C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\DataAccess.pdb
 C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\DataAccess.dll.config
-C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\EntityFramework.xml
 C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\EntityFramework.SqlServer.xml
 C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\System.Data.SqlClient.xml
 C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\System.Web.Helpers.xml
@@ -337,6 +335,8 @@ C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\Antlr3.Runtime.pdb
 C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\WebMatrix.Data.xml
 C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\WebMatrix.WebData.xml
 C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\obj\Debug\an-phat.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\obj\Debug\an-phat.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\obj\Debug\an-phat.csproj.CopyComplete
 C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\obj\Debug\an-phat.dll
 C:\Users\Admin\Documents\GitHub\thuctap\an-phat\an-phat\obj\Debug\an-phat.pdb
